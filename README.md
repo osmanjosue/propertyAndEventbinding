@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+clase 46
+crear constructor en personas.service.ts para injectar logginService.ts
+utilizar la funcion enviaMensajeAConsola de loggingService
+agregar el decorador de Injectable.
