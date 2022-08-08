@@ -1,5 +1,4 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { LoggingService } from '../LoggingService.service';
 
 import { Persona } from '../persona.model';
 import { PersonasService } from '../persona.service';
@@ -16,7 +15,8 @@ export class FormularioComponent  {
   @ViewChild('nombreInput') nombreRef:ElementRef;
   @ViewChild('apellidoInput') apellidoRef: ElementRef;
 
-  constructor(private loggingService:LoggingService, private personasService:PersonasService){
+  constructor(private personasService:PersonasService){
+    this.personasService.saludar.subscribe((indice:number)=>alert("El indice es: "+indice));
 
   }
 
