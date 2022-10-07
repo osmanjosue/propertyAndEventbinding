@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Egreso } from './egreso/egreso.model';
 import { EgresoServicio } from './egreso/egreso.servicio';
 import { Ingreso } from './ingreso/ingreso.model';
 import { IngresoServicio } from './ingreso/ingreso.servicio';
@@ -11,7 +12,7 @@ import { IngresoServicio } from './ingreso/ingreso.servicio';
 export class AppComponent {
 
   ingresos:Ingreso[]=[];
-  egresos:Ingreso[]=[];
+  egresos:Egreso[]=[];
 
   constructor(private ingresoServicio:IngresoServicio, 
               private egresoServicio:EgresoServicio){

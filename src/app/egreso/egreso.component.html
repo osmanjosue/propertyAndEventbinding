@@ -5,8 +5,8 @@
         <div *ngFor="let varivari of egresos" class="elemento limpiarEstilos" >
             <div class="elemento_descripcion">{{varivari.descripcion}}</div>
             <div class="right limpiarEstilos">
-                <div class="elemento_valor">- {{varivari.valor}}</div>
-                <div class="elemento_porcentaje">{{calcularPorcentaje(varivari)}}</div>
+                <div class="elemento_valor">- {{varivari.valor|currency:"HNL":"L.":'1.2-2'}}</div>
+                <div class="elemento_porcentaje">{{calcularPorcentaje(varivari)|percent}}</div>
                 <div class="elemento_eliminar">
                     <button class="elemento_eliminar--btn"><i class="ion-ios-close-outline"(click)=eliminarEgreso(varivari)></i></button>
                 </div>
