@@ -6,4 +6,9 @@ export class EgresoServicio{
         new Egreso("ropa", 200)
 
     ];
+
+    eliminar(tururu:Egreso){
+        const borrar:number=this.egresos.indexOf(tururu);
+        this.egresos.splice(borrar, 1);
+    }
 }

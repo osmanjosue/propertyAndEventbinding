@@ -41,7 +41,7 @@ getPorcentajeTotal(){
   return this.getEgresoTotal()/this.getIngresoTotal();
 }
 getPresupuestoTotal(){
-  this.getIngresoTotal() - this.getEgresoTotal();
+  return this.getIngresoTotal() - this.getEgresoTotal();
 }
 
  
