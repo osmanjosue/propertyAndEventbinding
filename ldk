@@ -1,0 +1,64 @@
+[33mcommit 1aedd86dabd3e6b0a9f805ad9633189d90cb3f40[m[33m ([m[1;36mHEAD -> [m[1;32mIngresoEgreso[m[33m, [m[1;31morigin/IngresoEgreso[m[33m)[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Fri Oct 7 16:45:15 2022 -0600
+
+    59 clase final-practica, practica, practica y practicaaaaa, esta dificil
+
+[33mcommit f99745dca2ea080f968d108f56a436c5f417730f[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Thu Oct 6 22:11:35 2022 -0600
+
+    58 clase final pipes
+
+[33mcommit d36d28784d72c0cc829b453a172181a7fd8bab34[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Thu Oct 6 18:30:24 2022 -0600
+
+    57 clase En solo esta seccion puedes practicar bastante de lo ya hecho
+
+[33mcommit 2ca5e8eb63e5e415c3b92950f4503b90936f7c5b[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Wed Oct 5 14:44:40 2022 -0600
+
+    56 clase final- se creo un metodo de eliminar registro
+
+[33mcommit 4f441d8fd8f14fc55bf1005cabdba80adcffc438[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Wed Oct 5 13:48:22 2022 -0600
+
+    ingreso.component.ts crea arreglo y asignale el valor del servicio IngresoServicio injectando el servicio
+    ingreso.component.ts usa el *ngFor iterando el arreglo de ingresos
+
+[33mcommit 76b11e18ff62e770d7820f50c78228cfe9a395fe[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Wed Oct 5 09:04:49 2022 -0600
+
+    55 clase final-declara las variables
+    inyecta los servicios
+    crea los 4 metodos
+    crea los @inputs en cabecerocomponent.ts
+    envia los inputs desde componente padre appcomponent.html mediante <app-cabecero>
+
+[33mcommit 23ad591fa71dd2f3567c49bf8cc06a9a3770d12e[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Tue Oct 4 22:45:03 2022 -0600
+
+    54 clase final-agregar los servicios a appmodule.ts en la seccion providers y separar los componentes
+
+[33mcommit 4a0f572ba5c21a6ec742be721a6dd93fbc850be2[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Tue Oct 4 21:26:34 2022 -0600
+
+    53 clase final definicion de los servicios y modelos de egreso e ingreso
+
+[33mcommit d0aedc08d6ca08500785df4c393f909c15bd458f[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Tue Oct 4 20:32:24 2022 -0600
+
+    52 clase final
+
+[33mcommit 901c6802919ae4f00be632ca7b9c7b9756567a2e[m
+Author: osmanjosue <osmanjosue@gmail.com>
+Date:   Sat Oct 1 22:22:35 2022 -0600
+
+    test
