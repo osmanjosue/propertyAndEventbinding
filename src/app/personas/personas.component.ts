@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Persona } from '../persona.model';
 import { PersonasService } from '../persona.service';
 
@@ -11,11 +12,17 @@ export class PersonasComponent implements OnInit {
 
   personas: Persona[] = [];
 
-constructor (private personasService:PersonasService){
+constructor (private personasService:PersonasService,
+              private router:Router
+  ){
 
 }
   ngOnInit(): void {
     this.personas=this.personasService.personas;
+  }
+
+  agregar(){
+    this.router.navigate(['personas/agregar']);
   }
 
 }
