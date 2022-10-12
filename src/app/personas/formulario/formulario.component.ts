@@ -1,33 +1,47 @@
-import { Component} from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Persona } from '../../persona.model';
 import { PersonasService } from '../../persona.service';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['./formulario.component.css'],
 })
-export class FormularioComponent  {
+export class FormularioComponent {
+  nombreInput: string;
+  apellidoInput: string;
+  index: number;
 
-  
-
- nombreInput:string;
-apellidoInput:string;
-
-  constructor(private personasService:PersonasService, private router:Router){
-    this.personasService.saludar.subscribe((indice:number)=>alert("El indice es: "+indice));
-
+  constructor(
+    private personasService: PersonasService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.personasService.saludar.subscribe((indice: number) =>
+      alert('El indice es: ' + indice)
+    );
   }
 
- 
-  onGuardarPersona(){
+  ngOnInit() {
+    this.index=this.route.snapshot.params['id'];
+    if(this.index){
+      let persona:Persona=this.personasService.encontrarPersona(this.index);
+      this.nombreInput=persona.nombre;
+      this.apellidoInput=persona.apellido;
+    }
+  }
+
+  onGuardarPersona() {
     let persona1 = new Persona(this.nombreInput, this.apellidoInput);
-    this.personasService.agregarPersona(persona1);
+    if(this.index){
+
+      this.personasService.modificarPersona(this.index, persona1);
+
+    }else{
+      this.personasService.agregarPersona(persona1);
+      
+    }
     this.router.navigate(['personas']);
-    
   }
-
- 
-
 }
