@@ -5,6 +5,12 @@ import { Persona } from "./persona.model";
 @Injectable()
 export class DataServices{
     constructor(private httpClient:HttpClient){}
+
+    cargarPersonas(){
+        return this.httpClient.get<Persona[]>('https://listado-personas-b3d79-default-rtdb.firebaseio.com/datos.json');
+    }
+
+    //Guardar Personas
     guardarPersonas(personas:Persona[]){
         this.httpClient.put('https://listado-personas-b3d79-default-rtdb.firebaseio.com/datos.json', personas)
         .subscribe(response=>console.log("resultado guardar Personas"+response),

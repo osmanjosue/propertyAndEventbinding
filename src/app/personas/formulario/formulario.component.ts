@@ -26,7 +26,7 @@ export class FormularioComponent {
 
   ngOnInit() {
     this.index=this.route.snapshot.params['id'];
-this.modoEdicion=+this.route.snapshot.queryParams['modoEdicion'];
+    this.modoEdicion=+this.route.snapshot.queryParams['modoEdicion'];
     if(this.modoEdicion!=null && this.modoEdicion===1){
       let persona:Persona=this.personasService.encontrarPersona(this.index);
       this.nombreInput=persona.nombre;
