@@ -26,6 +26,16 @@ export class DataServices{
         error=>console.log("error al guardar Personas:" +error)
         );
     }
+
+    eliminarPersona(index:number){
+        let url:string;
+        url= 'https://listado-personas-b3d79-default-rtdb.firebaseio.com/datos/'+index+'.json';
+        this.httpClient.delete(url)
+        .subscribe(
+            response=>console.log("resultado de eliminar un objeto Persona"+response),
+            error=>console.log("error al eliminar Persona"+error)
+            )
+    }
 }
 
 
